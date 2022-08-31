@@ -13,7 +13,13 @@
 
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - Move_to_java_1.8_#605
+  pull_request:
+  pull_request_review_comment:
+  workflow_dispatch:
 
 jobs:
   build:
